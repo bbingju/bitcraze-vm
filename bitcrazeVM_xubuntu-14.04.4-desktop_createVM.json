@@ -14,7 +14,7 @@
       "hard_drive_interface": "sata",
 
       "vboxmanage": [
-	["modifyvm", "{{.Name}}", "--memory", "1024", "--vram", "16", "--mouse", "usbtablet", "--rtcuseutc", "on", "--audio", "pulse", "--audiocodec", "ad1980", "--usb", "on", "--usbehci", "on", "--nestedpaging", "off"],
+	["modifyvm", "{{.Name}}", "--memory", "2048", "--vram", "16", "--mouse", "usbtablet", "--rtcuseutc", "on", "--audiocodec", "ad1980", "--usb", "on", "--usbehci", "on", "--nestedpaging", "off"],
 	["storageattach", "{{.Name}}", "--storagectl", "SATA Controller", "--port", "0", "--nonrotational", "on", "--discard", "on"]
       ],
 
